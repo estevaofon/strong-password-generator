@@ -1,7 +1,7 @@
 import secrets
 import string
 
-def gerar_senha_forte(tamanho=6):
+def gerar_senha(tamanho=6):
     if tamanho < 6:
         print("Tamanho da senha deve ser no mínimo 6.")
         return None
@@ -19,9 +19,3 @@ def gerar_senha_forte(tamanho=6):
 
     secrets.SystemRandom().shuffle(senha)
     return ''.join(senha)
-
-if __name__ == '__main__':
-    tamanho = int(input("Tamanho desejado da senha (mínimo 6): "))
-    senha = gerar_senha_forte(tamanho)
-    if senha:
-        print("Senha gerada:", senha)
