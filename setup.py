@@ -10,7 +10,7 @@ setup(
     packages=find_packages(),
     entry_points={
         'console_scripts': [
-            'strong_password = strong_password:main',
+            'strong-password = strong_password:main',
         ],
     },
 )
